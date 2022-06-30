@@ -1,0 +1,90 @@
+
+C:\Users\USER\Documents\Cmder
+λ cd ..
+
+C:\Users\USER\Documents
+λ cd ..
+
+C:\Users\USER
+λ cd desktop
+
+C:\Users\USER\Desktop
+λ cd proyecto_ejemplo
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ rm -rf .git
+
+C:\Users\USER\Desktop\proyecto_ejemplo
+λ ls
+README.md  venv/  Videos/
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ avenv
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip freeze
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip install pandas
+Collecting pandas
+  Downloading pandas-1.4.3-cp310-cp310-win_amd64.whl (10.5 MB)
+     ---------------------------------------- 10.5/10.5 MB 10.1 MB/s eta 0:00:00
+Collecting numpy>=1.21.0
+  Downloading numpy-1.23.0-cp310-cp310-win_amd64.whl (14.6 MB)
+     ---------------------------------------- 14.6/14.6 MB 10.4 MB/s eta 0:00:00
+Collecting python-dateutil>=2.8.1
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ---------------------------------------- 247.7/247.7 KB 2.2 MB/s eta 0:00:00
+Collecting pytz>=2020.1
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ---------------------------------------- 503.5/503.5 KB 5.3 MB/s eta 0:00:00
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, six, numpy, python-dateutil, pandas
+Successfully installed numpy-1.23.0 pandas-1.4.3 python-dateutil-2.8.2 pytz-2022.1 six-1.16.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'C:\Users\USER\Desktop\proyecto_ejemplo\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip freeze
+numpy==1.23.0
+pandas==1.4.3
+python-dateutil==2.8.2
+pytz==2022.1
+six==1.16.0
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip freeze > requirements.txt
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ ls
+README.md  requirements.txt  venv/  Videos/
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ cat requirements.txt
+numpy==1.23.0
+pandas==1.4.3
+python-dateutil==2.8.2
+pytz==2022.1
+six==1.16.0
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip install -r requeriments.txt
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requeriments.txt'
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'C:\Users\USER\Desktop\proyecto_ejemplo\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ pip install -r requirements.txt
+Requirement already satisfied: numpy==1.23.0 in c:\users\user\desktop\proyecto_ejemplo\venv\lib\site-packages (from -r requirements.txt (line 1)) (1.23.0)
+Requirement already satisfied: pandas==1.4.3 in c:\users\user\desktop\proyecto_ejemplo\venv\lib\site-packages (from -r requirements.txt (line 2)) (1.4.3)
+Requirement already satisfied: python-dateutil==2.8.2 in c:\users\user\desktop\proyecto_ejemplo\venv\lib\site-packages (from -r requirements.txt (line 3)) (2.8.2)
+Requirement already satisfied: pytz==2022.1 in c:\users\user\desktop\proyecto_ejemplo\venv\lib\site-packages (from -r requirements.txt (line 4)) (2022.1)
+Requirement already satisfied: six==1.16.0 in c:\users\user\desktop\proyecto_ejemplo\venv\lib\site-packages (from -r requirements.txt (line 5)) (1.16.0)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'C:\Users\USER\Desktop\proyecto_ejemplo\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+(venv) λ

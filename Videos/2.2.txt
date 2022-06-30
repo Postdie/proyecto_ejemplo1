@@ -1,0 +1,33 @@
+C:\Users\USER\Desktop
+λ mkdir proyecto_ejemplo
+
+C:\Users\USER\Desktop
+λ cd proyecto_ejemplo
+
+C:\Users\USER\Desktop\proyecto_ejemplo
+λ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/proyecto_ejemplo/.git/
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ py
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32 Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ py -m venv venv
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ ls
+venv/
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ ls venv\
+Include/  Lib/  pyvenv.cfg  Scripts/
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ source venv/bin/activate
+"source" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\USER\Desktop\proyecto_ejemplo(master)
+λ .\venv\Scripts\activate
